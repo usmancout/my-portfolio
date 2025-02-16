@@ -132,7 +132,7 @@ const Home = () => {
         >
           <div className="flex justify-center space-x-6">
             <a 
-              href="https://github.com" 
+              href="https://github.com/usmancout"
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
@@ -140,7 +140,7 @@ const Home = () => {
               <GitHub size={24} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://linkedin.com/in/usmancout"
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
@@ -148,7 +148,7 @@ const Home = () => {
               <Linkedin size={24} />
             </a>
             <a 
-              href="mailto:contact@example.com" 
+              href="usman.cout@gmail.com"
               className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
             >
               <Mail size={24} />

@@ -95,7 +95,7 @@ const Contact = () => {
               <h3 className="text-xl font-semibold mb-4">Connect with me</h3>
               <div className="flex gap-4">
                 <a
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/in/usmancout"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gray-800 p-3 rounded-full text-gray-400 hover:text-white hover:bg-purple-600 transition-colors"
@@ -103,7 +103,7 @@ const Contact = () => {
                   <Linkedin size={24} />
                 </a>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/usmancout"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gray-800 p-3 rounded-full text-gray-400 hover:text-white hover:bg-purple-600 transition-colors"
