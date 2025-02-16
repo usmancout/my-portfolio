@@ -74,7 +74,7 @@ const About = () => {
               About Me
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              I'm a passionate technologist with over 5 years of experience in full-stack development,
+              I'm a passionate technologist with over 1.5+ years of experience in full-stack development,
               OSINT analysis, and AI development. My approach combines technical expertise with
               creative problem-solving to deliver innovative solutions that make a difference.
             </p>

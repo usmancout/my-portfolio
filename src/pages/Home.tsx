@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Github as GitHub, Linkedin, Mail, ArrowDown, FileDown } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
@@ -50,27 +50,17 @@ const Home = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 relative"
+          className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 relative pt-20"
       >
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-800 via-gray-900 to-black -z-10" />
 
         <div className="w-full max-w-6xl mx-auto">
-          <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.2 }}
-              className="mb-8 flex justify-center lg:hidden"
-          >
-            <img
-                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&h=400"
-                alt="Profile"
-                className="w-48 h-48 sm:w-56 sm:h-56 rounded-full object-cover ring-4 ring-purple-500/30"
-            />
-          </motion.div><div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+          <div className="flex flex-col-reverse lg:flex-row lg:items-center lg:justify-between">
+            {/* Left Side - Text Content */}
             <div className="flex-1 text-center lg:text-left">
               <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4 }} className="space-y-4">
                 <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">
-                  Hi, I am Usman Ali
+                  Hi, I'm Usman Ali
                 </h1>
 
                 <div className="h-16 sm:h-20 lg:h-24">
@@ -98,11 +88,21 @@ const Home = () => {
                   </div>
 
                   <div className="flex gap-4">
-                    <motion.button onClick={handleContactClick} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="px-6 py-3 bg-purple-600 text-white rounded-full font-medium hover:bg-purple-700 transition-colors duration-200 flex items-center gap-2">
+                    <motion.button
+                        onClick={handleContactClick}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="px-6 py-3 bg-purple-600 text-white rounded-full font-medium hover:bg-purple-700 transition-colors duration-200 flex items-center gap-2"
+                    >
                       Contact Me
                       <ArrowDown size={18} className="animate-bounce" />
                     </motion.button>
-                    <motion.a href="/Usman's Resume.docx" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="px-6 py-3 bg-gray-800 text-white rounded-full font-medium hover:bg-gray-700 transition-colors duration-200 flex items-center gap-2">
+                    <motion.a
+                        href="/Usman's Resume.docx"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="px-6 py-3 bg-gray-800 text-white rounded-full font-medium hover:bg-gray-700 transition-colors duration-200 flex items-center gap-2"
+                    >
                       Resume
                       <FileDown size={18} />
                     </motion.a>
@@ -111,9 +111,18 @@ const Home = () => {
               </motion.div>
             </div>
 
-            <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 }} className="hidden lg:block ml-8 flex-shrink-0">
-              <img src="hello.jpg" alt="Profile"
-                   className="w-64 h-64 rounded-full object-cover ring-4 ring-purple-500/30"/>
+            {/* Right Side - Profile Picture */}
+            <motion.div
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ delay: 0.2 }}
+                className="flex justify-center lg:justify-start mb-8 lg:mb-0"
+            >
+              <img
+                  src="hello.jpg"
+                  alt="Profile"
+                  className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full object-cover ring-4 ring-purple-500/30"
+              />
             </motion.div>
           </div>
         </div>
