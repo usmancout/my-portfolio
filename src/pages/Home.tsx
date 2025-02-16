@@ -91,7 +91,7 @@ const Home = () => {
               transition={{ delay: 0.4 }}
               className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text"
           >
-            Usman
+            Usman Ali
           </motion.h1>
 
           <motion.p

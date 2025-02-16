@@ -22,7 +22,7 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             className="text-xl font-bold"
           >
-            Portfolio
+            Usman Ali
           </motion.div>
 
           {/* Desktop Menu */}

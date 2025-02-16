@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Github as GitHub, Linkedin, Mail, Heart } from 'lucide-react';
 
@@ -11,9 +11,9 @@ const Footer = () => {
     ];
 
     const socialLinks = [
-        { icon: <GitHub size={20} />, href: 'https://github.com', label: 'GitHub' },
-        { icon: <Linkedin size={20} />, href: 'https://linkedin.com', label: 'LinkedIn' },
-        { icon: <Mail size={20} />, href: 'mailto:contact@example.com', label: 'Email' },
+        { icon: <GitHub size={20} />, href: 'https://github.com/usmancout', label: 'GitHub' },
+        { icon: <Linkedin size={20} />, href: 'https://linkedin.com/in/usmancout', label: 'LinkedIn' },
+        { icon: <Mail size={20} />, href: 'usman.cout@gmail.com', label: 'Email' },
     ];
 
     return (
@@ -74,7 +74,7 @@ const Footer = () => {
                     <div>
                         <h4 className="text-lg font-semibold text-gray-200 mb-4">Contact</h4>
                         <p className="text-gray-400 text-sm mb-2">Email: usman.cout@gmail.com</p>
-                        <p className="text-gray-400 text-sm">Location: New Delhi, India</p>
+                        <p className="text-gray-400 text-sm">Location: Lahore, Pakistan</p>
                     </div>
                 </div>
 
