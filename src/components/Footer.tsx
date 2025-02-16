@@ -1,19 +1,19 @@
-// import React from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Github as GitHub, Linkedin, Mail, Heart } from 'lucide-react';
 
 const Footer = () => {
     const links = [
-        { path: '/', label: 'Home' },
-        { path: '/about', label: 'About' },
-        { path: '/projects', label: 'Projects' },
-        { path: '/contact', label: 'Contact' },
+        { path: '/#home', label: 'Home' },
+        { path: '/#about', label: 'About' },
+        { path: '/#projects', label: 'Projects' },
+        { path: '/#contact', label: 'Contact' },
     ];
 
     const socialLinks = [
         { icon: <GitHub size={20} />, href: 'https://github.com/usmancout', label: 'GitHub' },
         { icon: <Linkedin size={20} />, href: 'https://linkedin.com/in/usmancout', label: 'LinkedIn' },
-        { icon: <Mail size={20} />, href: 'usman.cout@gmail.com', label: 'Email' },
+        { icon: <Mail size={20} />, href: 'mailto:usman.cout@gmail.com', label: 'Email' },
     ];
 
     return (
@@ -36,16 +36,12 @@ const Footer = () => {
                         <ul className="space-y-2">
                             {links.map((link) => (
                                 <li key={link.path}>
-                                    <NavLink
-                                        to={link.path}
-                                        className={({ isActive }) =>
-                                            `${
-                                                isActive ? 'text-purple-400' : 'text-gray-400'
-                                            } hover:text-purple-300 transition-colors text-sm`
-                                        }
+                                    <a
+                                        href={link.path}
+                                        className="text-gray-400 hover:text-purple-300 transition-colors text-sm"
                                     >
                                         {link.label}
-                                    </NavLink>
+                                    </a>
                                 </li>
                             ))}
                         </ul>

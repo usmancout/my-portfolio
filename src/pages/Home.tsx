@@ -114,7 +114,8 @@ const Home = () => {
             </div>
 
             <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 }} className="hidden lg:block ml-8 flex-shrink-0">
-              <img src="../pics/hello.jpg" alt="Profile" className="w-64 h-64 rounded-full object-cover ring-4 ring-purple-500/30" />
+              <img src="/src/pics/hello.jpg" alt="Profile"
+                   className="w-64 h-64 rounded-full object-cover ring-4 ring-purple-500/30"/>
             </motion.div>
           </div>
         </div>
