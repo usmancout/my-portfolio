@@ -7,38 +7,38 @@ const About = () => {
     {
       icon: <Code2 size={24} />,
       title: 'Frontend Development',
-      description: 'Expert in React, Vue, and modern JavaScript. Building responsive and accessible web applications.',
-      tools: ['React', 'Vue.js', 'TypeScript', 'Tailwind CSS']
+      description: 'Expert in Angular, HTML CSS, intermediate React, Typescript, and modern JavaScript. Building responsive and accessible web applications.',
+      tools: ['React', 'Angular', 'TypeScript', 'Tailwind CSS','HTML']
     },
     {
       icon: <Database size={24} />,
       title: 'Backend Development',
       description: 'Proficient in building scalable APIs and managing databases with modern technologies.',
-      tools: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB']
+      tools: ['Node.js', 'Python', 'Flask', 'Django', 'MongoDB', 'Rest API']
     },
     {
       icon: <Search size={24} />,
       title: 'OSINT Analysis',
       description: 'Skilled in digital investigation and data analysis using advanced research techniques.',
-      tools: ['Maltego', 'Shodan', 'OSINT Framework', 'Data Analysis']
+      tools: ['Have I Been Pwned', 'SpiderFoot ', 'OSINT Framework', 'Data Analysis']
     },
     {
       icon: <Brain size={24} />,
       title: 'AI Development',
       description: 'Experienced in developing AI solutions and implementing machine learning models.',
-      tools: ['TensorFlow', 'PyTorch', 'NLP', 'Computer Vision']
+      tools: ['TensorFlow', 'Neural Networks', 'Keras','Scikit-learn', 'Pandas', 'Numpy']
     },
     {
       icon: <Shield size={24} />,
       title: 'Security',
       description: 'Strong focus on implementing secure coding practices and vulnerability assessment.',
-      tools: ['Penetration Testing', 'Security Auditing', 'Encryption', 'Auth Systems']
+      tools: ['GitHub Advanced Security ', 'Security Auditing', 'Encryption', 'Codacy']
     },
     {
       icon: <Globe size={24} />,
       title: 'DevOps',
       description: 'Experience with cloud platforms and containerization technologies.',
-      tools: ['Docker', 'AWS', 'CI/CD', 'Kubernetes']
+      tools: ['Next Cloud', 'AWS', 'AWS S3', 'AWS EC2']
     }
   ];
 
@@ -116,7 +116,7 @@ const About = () => {
               className="mt-12 text-center"
           >
             <a
-                href="/contact"
+                href="https://linkedin/in/usmancout"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 text-white rounded-full font-medium hover:bg-purple-700 transition-colors duration-200"
             >
               <Terminal size={18} />

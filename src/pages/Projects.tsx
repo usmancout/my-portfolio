@@ -5,30 +5,50 @@ import { ExternalLink, Github as GitHub, Folder, Star } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: 'AI-Powered E-Commerce Platform',
-      description: 'A sophisticated e-commerce platform with AI-driven product recommendations and real-time inventory management.',
-      image: 'https://images.unsplash.com/photo-1557821552-17105176375c?w=500&h=300',
-      github: 'https://github.com',
-      live: 'https://example.com',
-      tags: ['React', 'Node.js', 'TensorFlow', 'PostgreSQL'],
+      title: 'Quran Search Software',
+      description: 'A powerful Quran software app that provides results by Ayah reference and enables advanced keyword search for easy exploration..',
+      image: 'src/pics/quran-search.png',
+      github: 'https://github.com/usmancout/quran-search-engine',
+      live: 'https://quran-search-gold.vercel.app/',
+      tags: ['React', 'API'],
       featured: true
     },
     {
-      title: 'OSINT Investigation Dashboard',
-      description: 'Advanced OSINT tool for digital investigations with automated data collection and analysis capabilities.',
-      image: 'https://images.unsplash.com/photo-1540350394557-8d14678e7f91?w=500&h=300',
-      github: 'https://github.com',
-      live: 'https://example.com',
-      tags: ['Vue.js', 'Python', 'Elasticsearch', 'Docker'],
+      title: 'Orion Search',
+      description: 'I am working as OSINT Analyst for Orion Search Engine.',
+      image: 'src/pics/orion.png',
+      github: 'https://github.com/usmancout',
+      live: 'https://orion.genesistechnologies.org/login',
+      tags: ['Python', 'BeautifulSOup', 'Elasticsearch', 'Selenium'],
       featured: true
     },
     {
-      title: 'Secure Communication Platform',
-      description: 'End-to-end encrypted messaging platform with advanced security features and real-time collaboration.',
-      image: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?w=500&h=300',
-      github: 'https://github.com',
-      live: 'https://example.com',
-      tags: ['React', 'WebRTC', 'Node.js', 'MongoDB'],
+      title: 'Web Scraper in Flask and Angular',
+      description: 'A web scraper that scrape publically available books data.',
+      image: 'src/pics/scraper.png',
+      github: 'https://github.com/usmancout/WebScraper-Flask-Anglar-',
+      // live: 'https://example.com',
+      tags: ['Angular', 'Flask', 'API', 'BeautifulSoup'],
+      featured: true
+    },
+
+    {
+      title: 'Online Quiz Portal',
+      description: 'A quiz app that dynamically fetches the mcq and store the state of each mcq.',
+      image: 'src/pics/quiz.png',
+      github: 'https://github.com/usmancout/online-Exam-portal',
+      // live: 'https://example.com',
+      tags: ['Angular', 'MongoDB', 'Node.js','Typescript','express'],
+      featured: true
+    },
+
+    {
+      title: 'PDF DPI (Dots Per Image) Converter ',
+      description: 'A software that processes a pdf file and reset its dpi explicitly.',
+      image: 'src/pics/pdf.png',
+      github: 'https://github.com/usmancout/online-Exam-portal',
+      // live: 'https://example.com',
+      tags: ['React', 'Node.js', 'express'],
       featured: true
     }
   ];

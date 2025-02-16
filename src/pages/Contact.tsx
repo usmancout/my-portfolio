@@ -9,11 +9,28 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+  const [showPopup, setShowPopup] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
+    // Log form data to the console (this is where you would send the data to a server)
     console.log(formData);
+
+    // Show popup
+    setShowPopup(true);
+
+    // Clear form fields
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
+
+    // Hide popup after 3 seconds
+    setTimeout(() => {
+      setShowPopup(false);
+    }, 3000);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -28,7 +45,7 @@ const Contact = () => {
       icon: <Mail size={24} />,
       title: 'Email',
       value: 'usman.cout@gmail.com',
-      link: 'usman.cout@gmail.com'
+      link: 'mailto:usman.cout@gmail.com'
     },
     {
       icon: <MapPin size={24} />,
@@ -39,7 +56,7 @@ const Contact = () => {
       icon: <Phone size={24} />,
       title: 'Phone',
       value: '+92 325 6363617',
-      link: '+92 325 6363617'
+      link: 'tel:+923256363617'
     }
   ];
 
@@ -192,6 +209,20 @@ const Contact = () => {
             </motion.form>
           </div>
         </div>
+
+        {showPopup && (
+            <motion.div
+                initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
+                animate={{ opacity: 1, scale: 1, rotate: 0 }}
+                exit={{ opacity: 0, scale: 0.8, rotate: 10 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 text-white py-3 px-6 rounded-lg shadow-lg text-lg"
+            >
+              Message sent successfully!
+            </motion.div>
+        )}
+
+
       </motion.div>
   );
 };
