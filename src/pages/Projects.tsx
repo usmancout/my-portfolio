@@ -7,7 +7,7 @@ const Projects = () => {
     {
       title: 'Quran Search Software',
       description: 'A powerful Quran software app that provides results by Ayah reference and enables advanced keyword search for easy exploration..',
-      image: 'src/pics/quran-search.png',
+      image: 'quran-search.png',
       github: 'https://github.com/usmancout/quran-search-engine',
       live: 'https://quran-search-gold.vercel.app/',
       tags: ['React', 'API'],
@@ -16,7 +16,7 @@ const Projects = () => {
     {
       title: 'Orion Search',
       description: 'I am working as OSINT Analyst for Orion Search Engine.',
-      image: 'src/pics/orion.png',
+      image: 'orion.png',
       github: 'https://github.com/usmancout',
       live: 'https://orion.genesistechnologies.org/login',
       tags: ['Python', 'BeautifulSOup', 'Elasticsearch', 'Selenium'],
@@ -25,7 +25,7 @@ const Projects = () => {
     {
       title: 'Web Scraper in Flask and Angular',
       description: 'A web scraper that scrape publically available books data.',
-      image: 'src/pics/scraper.png',
+      image: 'scraper.png',
       github: 'https://github.com/usmancout/WebScraper-Flask-Anglar-',
       // live: 'https://example.com',
       tags: ['Angular', 'Flask', 'API', 'BeautifulSoup'],
@@ -35,7 +35,7 @@ const Projects = () => {
     {
       title: 'Online Quiz Portal',
       description: 'A quiz app that dynamically fetches the mcq and store the state of each mcq.',
-      image: 'src/pics/quiz.png',
+      image: 'quiz.png',
       github: 'https://github.com/usmancout/online-Exam-portal',
       // live: 'https://example.com',
       tags: ['Angular', 'MongoDB', 'Node.js','Typescript','express'],
@@ -45,7 +45,7 @@ const Projects = () => {
     {
       title: 'PDF DPI (Dots Per Image) Converter ',
       description: 'A software that processes a pdf file and reset its dpi explicitly.',
-      image: 'src/pics/pdf.png',
+      image: 'pdf.png',
       github: 'https://github.com/usmancout/online-Exam-portal',
       // live: 'https://example.com',
       tags: ['React', 'Node.js', 'express'],

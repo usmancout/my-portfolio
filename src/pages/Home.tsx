@@ -66,9 +66,7 @@ const Home = () => {
                 alt="Profile"
                 className="w-48 h-48 sm:w-56 sm:h-56 rounded-full object-cover ring-4 ring-purple-500/30"
             />
-          </motion.div>
-
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+          </motion.div><div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
             <div className="flex-1 text-center lg:text-left">
               <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4 }} className="space-y-4">
                 <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">
@@ -114,7 +112,7 @@ const Home = () => {
             </div>
 
             <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 }} className="hidden lg:block ml-8 flex-shrink-0">
-              <img src="/src/pics/hello.jpg" alt="Profile"
+              <img src="hello.jpg" alt="Profile"
                    className="w-64 h-64 rounded-full object-cover ring-4 ring-purple-500/30"/>
             </motion.div>
           </div>
