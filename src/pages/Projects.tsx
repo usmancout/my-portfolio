@@ -27,29 +27,22 @@ const Projects = () => {
       description: 'A web scraper that scrape publically available books data.',
       image: 'scraper.png',
       github: 'https://github.com/usmancout/WebScraper-Flask-Anglar-',
-      // live: 'https://example.com',
       tags: ['Angular', 'Flask', 'API', 'BeautifulSoup'],
       featured: true
     },
-
     {
       title: 'Online Quiz Portal',
       description: 'A quiz app that dynamically fetches the mcq and store the state of each mcq.',
       image: 'quiz.png',
       github: 'https://github.com/usmancout/online-Exam-portal',
-      // live: 'https://example.com',
       tags: ['Angular', 'MongoDB', 'Node.js','Typescript','express'],
-      featured: true
     },
-
     {
       title: 'PDF DPI (Dots Per Image) Converter ',
       description: 'A software that processes a pdf file and reset its dpi explicitly.',
       image: 'pdf.png',
       github: 'https://github.com/usmancout/online-Exam-portal',
-      // live: 'https://example.com',
       tags: ['React', 'Node.js', 'express'],
-      featured: true
     }
   ];
 
@@ -128,8 +121,8 @@ const Projects = () => {
                               key={tag}
                               className="text-sm px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full"
                           >
-                      {tag}
-                    </span>
+                            {tag}
+                          </span>
                       ))}
                     </div>
                     <div className="flex justify-between items-center">
@@ -151,9 +144,6 @@ const Projects = () => {
                           <ExternalLink size={20} />
                         </a>
                       </div>
-                      <button className="text-purple-400 hover:text-purple-300 text-sm font-medium">
-                        Learn More →
-                      </button>
                     </div>
                   </div>
                 </motion.div>
