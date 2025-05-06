@@ -98,7 +98,7 @@ const Home = () => {
                       <ArrowDown size={18} className="animate-bounce" />
                     </motion.button>
                     <motion.a
-                        href="/Usman's Resume.pdf"
+                        href="/Usman's Resume .pdf"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         className="px-6 py-3 bg-gray-800 text-white rounded-full font-medium hover:bg-gray-700 transition-colors duration-200 flex items-center gap-2"
