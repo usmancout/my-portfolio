@@ -109,20 +109,6 @@ const About = () => {
             ))}
           </motion.div>
 
-          <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.6 }}
-              className="mt-12 text-center"
-          >
-            <a
-                href="https://linkedin/in/usmancout"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 text-white rounded-full font-medium hover:bg-purple-700 transition-colors duration-200"
-            >
-              <Terminal size={18} />
-              Let's Work Together
-            </a>
-          </motion.div>
         </div>
       </motion.div>
   );
